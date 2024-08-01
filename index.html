@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekend Plans</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="page1" class="page">
+        <h1>准备好和我一起度过快乐周末了嘛？</h1>
+        <button onclick="showPage('page2')">继续</button>
+    </div>
+
+    <div id="page2" class="page" style="display:none;">
+        <h1>这周去哪玩呢？</h1>
+        <button onclick="showPage('page3')">继续</button>
+    </div>
+
+    <div id="page3" class="page" style="display:none;">
+        <h1>这个周末你想要Crazy or Chill？</h1>
+        <button onclick="showPage('crazy')">Crazy</button>
+        <button onclick="showPage('chill')">Chill</button>
+    </div>
+
+    <div id="crazy" class="page" style="display:none;">
+        <h1>Crazy都是和水有关的活动哦，给你个机会重新选择！</h1>
+        <button onclick="showPage('page3')">返回上个界面</button>
+        <button onclick="showPage('crazyContinue')">继续看看</button>
+    </div>
+
+    <div id="crazyContinue" class="page" style="display:none;">
+        <h1>想一起玩水的话</h1>
+        <button onclick="showPage('stimulatingWater')">刺激玩水</button>
+        <button onclick="showPage('relaxingWater')">休闲玩水</button>
+    </div>
+
+    <div id="stimulatingWater" class="page" style="display:none;">
+        <h1>选择到的是我们的Plan a：</h1>
+        <p>周六水上乐园夜场<br>不晒！不需要会游泳！好玩！</p>
+        <button onclick="showPage('end')">完成</button>
+    </div>
+
+    <div id="relaxingWater" class="page" style="display:none;">
+        <h1>选择到的是我们的Plan b：</h1>
+        <p>Let’s感受一下东北的洗浴文化！！！去泡温泉～～～</p>
+        <button onclick="showPage('end')">完成</button>
+    </div>
+
+    <div id="chill" class="page" style="display:none;">
+        <h1>哈哈哈哈还是可以选择有无水的活动</h1>
+        <button onclick="showPage('chillWater')">与水有关</button>
+        <button onclick="showPage('chillNoWater')">与水无关</button>
+    </div>
+
+    <div id="chillWater" class="page" style="display:none;">
+        <h1>选择到的是我们的Plan b：</h1>
+        <p>Let’s感受一下东北的洗浴文化！！！去泡温泉～～～</p>
+        <button onclick="showPage('end')">完成</button>
+    </div>
+
+    <div id="chillNoWater" class="page" style="display:none;">
+        <h1>选择到的是我们的Plan c：</h1>
+        <p>周六晚上我们先去恰饭然后去参加一个女巫主题的bar活动怎么样～～～</p>
+        <button onclick="showPage('end')">完成</button>
+    </div>
+
+    <div id="end" class="page" style="display:none;">
+        <h1>周末愉快</h1>
+        <p>开始期待啦～</p>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
